@@ -8,8 +8,8 @@ export default function Header() {
 
   return (
     <header className="border-b border-border shadow bg-background fixed w-full top-0 z-50">
-      <div className="flex justify-center py-2 px-2 gap-2 text-white bg-primary">
-        <PencilRuler /> This website is under construction. Details presented here are subject to change!
+      <div className="flex justify-center items-center py-2 px-2 gap-2 text-white bg-primary">
+        <PencilRuler className="w-20 sm:w-min" /> This website is under construction. Details presented here are subject to change!
       </div>
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         <a href="/">
