@@ -14,10 +14,10 @@ export default function EquipmentPage() {
       <section className="mx-auto max-w-7xl px-4 pb-20 pt-36 sm:px-6 lg:px-8">
         <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-secondary">Equipment</p>
-            <h1 className="mt-3 text-4xl font-bold tracking-tight text-foreground sm:text-5xl">Bookable machines</h1>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-secondary">Book Now!</p>
+            <h1 className="mt-3 text-4xl font-bold tracking-tight text-foreground sm:text-5xl">Equipment</h1>
             <p className="mt-4 max-w-3xl text-lg text-muted-foreground">
-              Browse available fabrication equipment and open a machine page to see specifications before placing an order.
+              Facilities available at the Idea Factory
             </p>
           </div>
         </div>
@@ -29,11 +29,11 @@ export default function EquipmentPage() {
               href={`/equipment/${item.id}`}
               className="group flex min-h-full flex-col overflow-hidden rounded-lg border bg-card shadow-sm transition hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg"
             >
-              <div className="aspect-[16/10] overflow-hidden bg-muted">
+              <div className="aspect-[16/10] overflow-hidden bg-white p-4">
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+                  className="h-full w-full object-contain transition duration-300 group-hover:scale-105"
                 />
               </div>
               <div className="flex flex-1 flex-col gap-4 p-5">

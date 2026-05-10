@@ -1,25 +1,21 @@
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import StructuredBrowserBack from "@/components/structured-browser-back"
-import { ArrowRight, Boxes, Building2 } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 const facilities = [
   {
     title: "Equipment",
     href: "/equipment",
-    icon: Boxes,
-    description:
-      "3D printers, laser cutters, fabrication machines, and other bookable tools for prototypes and student projects.",
-    items: "3D printers, laser cutters, scanners, CNC tools",
+    image: "/facilities-equipment-cluster.svg",
+    line: "3D printers, laser cutters, and fabrication machines",
   },
   {
     title: "Infrastructure",
     href: "/infrastructure",
-    icon: Building2,
-    description:
-      "Shared creation spaces and lab stations for workshops, electronics work, machining, and project reviews.",
-    items: "Seminar hall, soldering station, machining station",
+    image: "/facilities-infrastructure-spaces.svg",
+    line: "Seminar hall, soldering station, and machining station",
   },
 ]
 
@@ -38,31 +34,26 @@ export default function FacilitiesPage() {
         </div>
 
         <div className="grid gap-6">
-          {facilities.map((facility) => {
-            const Icon = facility.icon
+          {facilities.map((facility) => (
+            <Link
+              key={facility.href}
+              href={facility.href}
+              className="group grid gap-6 overflow-hidden rounded-lg border bg-card p-5 shadow-sm transition hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg md:grid-cols-[minmax(260px,0.85fr)_1fr_auto] md:items-center md:p-7"
+            >
+              <div className="flex aspect-[16/9] min-h-44 items-center justify-center rounded-md bg-white">
+                <img src={facility.image} alt="" className="h-full w-full object-contain" />
+              </div>
 
-            return (
-              <Link
-                key={facility.href}
-                href={facility.href}
-                className="group grid min-h-64 gap-6 rounded-lg border bg-card p-7 shadow-sm transition hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg md:grid-cols-[1fr_auto] md:items-center md:p-10"
-              >
-                <div className="flex flex-col gap-5">
-                  <span className="flex size-14 items-center justify-center rounded-md bg-primary text-primary-foreground">
-                    <Icon className="size-7" />
-                  </span>
-                  <div>
-                    <h2 className="text-3xl font-bold">{facility.title}</h2>
-                    <p className="mt-3 max-w-3xl text-base leading-7 text-muted-foreground">{facility.description}</p>
-                  </div>
-                  <p className="text-sm font-medium text-foreground">{facility.items}</p>
-                </div>
-                <span className="flex size-12 items-center justify-center rounded-md border text-primary transition group-hover:bg-primary group-hover:text-primary-foreground">
-                  <ArrowRight className="size-5" />
-                </span>
-              </Link>
-            )
-          })}
+              <div className="min-w-0">
+                <h2 className="text-3xl font-bold leading-tight text-foreground sm:text-4xl lg:text-5xl">{facility.title}</h2>
+                <p className="mt-2 text-base leading-7 text-muted-foreground sm:text-lg">{facility.line}</p>
+              </div>
+
+              <span className="flex size-12 items-center justify-center rounded-md border text-primary transition group-hover:bg-primary group-hover:text-primary-foreground">
+                <ArrowRight className="size-5" />
+              </span>
+            </Link>
+          ))}
         </div>
       </section>
       <Footer />
