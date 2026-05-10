@@ -37,8 +37,8 @@ export default async function EquipmentDetailPage({ params }: EquipmentDetailPag
         </Button>
 
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
-          <div className="overflow-hidden rounded-lg border bg-card shadow-sm">
-            <img src={item.image} alt={item.name} className="aspect-[16/10] w-full object-cover" />
+          <div className="overflow-hidden rounded-lg border bg-white p-6 shadow-sm">
+            <img src={item.image} alt={item.name} className="aspect-[16/10] w-full object-contain" />
           </div>
 
           <div>
