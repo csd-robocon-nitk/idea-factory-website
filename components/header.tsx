@@ -23,7 +23,7 @@ export default function Header() {
           <a href="/team" className="text-sm hover:text-primary transition">
             Our Team
           </a>
-          <a href="#" className="text-sm hover:text-primary transition">
+          <a href="/facilities" className="text-sm hover:text-primary transition">
             Facilities
           </a>
           <a href="#" className="text-sm hover:text-primary transition">
@@ -45,7 +45,7 @@ export default function Header() {
             <a href="/team" className="text-sm hover:text-primary">
               Our Team
             </a>
-            <a href="#" className="text-sm hover:text-primary">
+            <a href="/facilities" className="text-sm hover:text-primary">
               Facilities
             </a>
             <a href="#" className="text-sm hover:text-primary">
