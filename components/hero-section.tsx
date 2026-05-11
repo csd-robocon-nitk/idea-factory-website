@@ -47,7 +47,7 @@ export default function HeroSection() {
 
           <div className="relative rounded-lg overflow-hidden border border-primary/10">
             <img
-              src="/image_001.png"
+              src="/image_001.jpg"
               alt="Idea Factory facility with makers using tools"
               className="w-full object-cover"
             />
