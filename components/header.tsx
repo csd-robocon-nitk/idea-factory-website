@@ -26,12 +26,12 @@ export default function Header() {
           <a href="/facilities" className="text-sm hover:text-primary transition">
             Facilities
           </a>
-          <a href="#" className="text-sm hover:text-primary transition">
+          {/* <a href="#" className="text-sm hover:text-primary transition">
             Creation Spaces
           </a>
           <a href="#" className="text-sm hover:text-primary transition">
             Contact
-          </a>
+          </a> */}
         </div>
 
         <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -48,12 +48,12 @@ export default function Header() {
             <a href="/facilities" className="text-sm hover:text-primary">
               Facilities
             </a>
-            <a href="#" className="text-sm hover:text-primary">
+            {/* <a href="#" className="text-sm hover:text-primary">
               Creation Spaces
             </a>
             <a href="#" className="text-sm hover:text-primary">
               Contact
-            </a>
+            </a> */}
           </div>
         </div>
       )}

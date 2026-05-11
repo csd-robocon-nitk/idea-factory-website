@@ -34,6 +34,7 @@ export default function HeroSection() {
               <Button
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground flex items-center gap-2 duration-150 cursor-pointer"
+                onClick={() => redirect("/facilities")}
               >
                 Explore Facilities
                 <ArrowRight size={18} />

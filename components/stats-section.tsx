@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react"
+import { redirect } from "next/navigation"
 
 
 export default function StatsSection() {
@@ -12,6 +13,7 @@ export default function StatsSection() {
         <div className="flex justify-center">
           <div
             className="bg-primary hover:bg-primary/90 text-primary-foreground text-xl font-medium flex items-center gap-2 duration-150 cursor-pointer py-2 px-10 rounded-full"
+            onClick={() => redirect("/facilities")}
           >
             Explore Facilities
             <ArrowRight size={25} className="shrink-0" />

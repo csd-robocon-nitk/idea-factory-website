@@ -11,7 +11,7 @@ let faculty = [
     {
         image: "/images/team/Uday Bhat.jpg",
         name: "Prof. Udaya Bhat K",
-        designation: "Dean R&C",
+        designation: "Dean R&I",
         linkedin: "https://www.linkedin.com/in/udaya-bhat-k-55996a71/",
     },
     {
